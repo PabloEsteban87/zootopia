@@ -2,8 +2,8 @@ package org.factoriaf5.zootopia.controllers;
 
 import java.util.List;
 
-import org.factoriaf5.zootopia.controllers.repositories.UserRepository;
 import org.factoriaf5.zootopia.models.User;
+import org.factoriaf5.zootopia.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

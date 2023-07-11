@@ -9,7 +9,8 @@ import { DashboardFamiliesComponent } from './dashboard_families/dashboard-famil
 import { HeaderComponent } from './shared/header/header.component';
 import { EditFormComponent } from './user/components/edit-form/edit-form.component';
 import { AddFormComponent } from './forms/add-form/add-form.component';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+import { DashboardCountComponent } from './dashboard-count/dashboard-count.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     AccessformComponent,
     EditFormComponent,
+    DashboardCountComponent,
   ],
   imports: [
     BrowserModule,

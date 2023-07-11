@@ -9,7 +9,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { EditFormComponent } from './user/components/edit-form/edit-form.component';
 import { AddFormComponent } from './forms/add-form/add-form.component';
 import { FormsModule } from '@angular/forms';
-import { DashboardCountComponent } from './dashboard-count/dashboard-count.component'; 
+import { DashboardCountComponent } from './dashboard-count/dashboard-count.component';
+import { DashboardFamiliesComponent } from './dashboard_families/dashboard-families/dashboard-families.component'; 
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { DashboardCountComponent } from './dashboard-count/dashboard-count.compo
     AccessFormComponent,
     EditFormComponent,
     DashboardCountComponent,
+    DashboardFamiliesComponent
   ],
   imports: [
     RouterModule,

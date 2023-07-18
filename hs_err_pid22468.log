@@ -1,0 +1,60 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffe8ea77505, pid=22468, tid=22224
+#
+# JRE version: Java(TM) SE Runtime Environment (20.0.1+9) (build 20.0.1+9-29)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (20.0.1+9-29, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x367505]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=52087:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 org.factoriaf5.zootopia.ZootopiaApplication
+
+Host: 12th Gen Intel(R) Core(TM) i7-12700K, 20 cores, 63G,  Windows 11 , 64 bit Build 22621 (10.0.22621.1928)
+Time: Thu Jul 13 15:29:12 2023 Hora de verano romance elapsed time: 24510.628847 seconds (0d 6h 48m 30s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000027cb8f199c0):  WorkerThread "GC Thread#11" [stack: 0x000000a141600000,0x000000a141700000] [id=22224]
+
+Stack: [0x000000a141600000,0x000000a141700000],  sp=0x000000a1416ff3b0,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x367505]
+V  [jvm.dll+0x3681b5]
+V  [jvm.dll+0x369d9b]
+V  [jvm.dll+0x36855a]
+V  [jvm.dll+0x36994b]
+V  [jvm.dll+0x373ee3]
+V  [jvm.dll+0x37402b]
+V  [jvm.dll+0x8759c7]
+V  [jvm.dll+0x7f4b56]
+V  [jvm.dll+0x6ba5cb]
+C  [ucrtbase.dll+0x29363]
+C  [KERNEL32.DLL+0x126ad]
+C  [ntdll.dll+0x5aa68]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x00007ffe970547a8
+
+
+Registers:
+RAX=0x0000000000fc0100, RBX=0x00000004038053b8, RCX=0x000000a1416ff440, RDX=0x00000004038053b8
+RSP=0x000000a1416ff3b0, RBP=0x0000000403805400, RSI=0x00000004038053b8, RDI=0x00000004038053c0
+R8 =0x0000000800800a88, R9 =0x00007ffe8e710000, R10=0x0000000000000045, R11=0x0000027c83038160
+R12=0x0000000403805200, R13=0x000000a1416ff430, R14=0x0000027c9cce4000, R15=0x000000a1416ff440
+RIP=0x00007ffe8ea77505, EFLAGS=0x0000000000010206
+
+
+Register to memory mapping:
+
+RIP=0x00007ffe8ea77505 jvm.dll
+RAX=0x0000000000fc0100 is an unknown value
+RBX=

@@ -10,6 +10,13 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { TestdbComponent } from './testdb/testdb.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardFamiliesComponent } from './dashboard_families/dashboard-families/dashboard-families.component';
+import { ListComponent } from './animals/list/list.component';
+import { CountAnimalsComponent } from './count_animals/count-animals/count-animals.component';
+
+
+import { MatButtonModule } from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -18,14 +25,20 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     AccessFormComponent,
     AddFormComponent,
-    TestdbComponent
+    TestdbComponent,
+    DashboardFamiliesComponent,
+    ListComponent,
+    CountAnimalsComponent
   ],
   imports: [
     RouterModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatMenuModule
+
     
   ],
   providers: [],

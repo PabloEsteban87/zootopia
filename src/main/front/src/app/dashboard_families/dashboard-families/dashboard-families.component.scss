@@ -4,6 +4,8 @@ $desktop:1024px;
 
 .row{
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -55,7 +57,9 @@ $desktop:1024px;
 .dropdown-menu{
 }
 
-
+.img_families{
+  width: 80%;
+}
 
 @media (min-width:$phone) and (max-width:$tablet){
   .origen{
@@ -70,7 +74,7 @@ $desktop:1024px;
 }
 @media (min-width:$tablet) and (max-width:$desktop){
 
-  .families img{
+  .img_families{
     width: 95%;
   }
 

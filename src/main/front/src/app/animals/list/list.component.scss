@@ -2,7 +2,54 @@ tr,th{
     text-align: center;
     background-color: rgba(71, 125, 71, 1);
     color: white;
+    
 }
 img{
     width: 10dvw;
+}
+
+.container{
+    display: inline-block;
+}
+
+button{
+    background-color: #477D47;
+    color: white;
+}
+
+table{
+    display: inline-block;
+}
+
+.submenu{
+    display: inline-flex;
+}
+
+.show-menu{
+/*     display: inline-flex !important; */
+/*      position: absolute; 
+     left: 59%; */
+
+}
+
+.row-submenu{
+    display: inline-flex !important;
+/*     width: 100%; */
+}
+
+.editar{
+    width: 100%;
+    padding: 10px;
+    background-color: #477D47;
+    color: white;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.borrar{
+    width: 100%;
+    padding: 10px;
+    background-color: #C6644F;
+    color: white;
+    text-align: center;
 }

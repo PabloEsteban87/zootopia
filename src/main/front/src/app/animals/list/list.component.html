@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
       <div class="datatable">
-        <table mat-table 
+        <table id="table" mat-table 
           class="z-depth-1 table table-responsive table-striped table-bordered table-hover"
         >
           <thead>
@@ -16,7 +16,7 @@
             </tr>
           </thead>
           <tbody>          
-              <tr *ngFor="let animal of animals" class="">
+              <tr *ngFor="let animal of tableData; let i = index" class="rowmenu">
                   <td>
                       <i>{{ animal.name }}</i>
                     </td>
@@ -30,20 +30,30 @@
                       <i>{{ animal.date | date:'d/M/y'}}</i>
                     </td>
                     <td>
-                      <i>{{ animal.origin }}</i>
+                      <i>{{ animal.continents_id }}</i>
                     </td>
                     <td>
                       <img src="{{ animal.img_url }}" alt="imagen {{ animal.name }}" srcset="" />
                     </td>
                     <td>
-                      <i>{{ animal.family }}</i>
+                      <i>{{ animal.family_id }}</i>
                     </td>
                     <td>
-                      <button>+</button>
+                      <button  id="" #button class="boton">+</button>
                     </td>
+                    <td class="row-submenu"><div class="submenu">
+                      <div (click)="buttonEdit(i)" class="editar">Editar</div>
+                      <div (click)=" buttonDelete(i)" class="borrar">Borrar</div> </div></td>
               </tr>          
           </tbody>   
         </table>
       </div>
     </div>
   </div>
+
+  
+
+
+
+
+ 

@@ -7,25 +7,17 @@
                 </button>
 
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">America</a></li>
-                    <li><a class="dropdown-item" href="#">Europa</a></li>
-                    <li><a class="dropdown-item" href="#">Asia</a></li>
-                    <li><a class="dropdown-item" href="#">Oceania</a></li>
-                    <li><a class="dropdown-item" href="#">Africa</a></li>
+                    <li *ngFor="let row of tableData2"><a [ngClass]="'dropdown-item'" href="#">{{row.name}}</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="col-6 col-md-2">
         <div class="ejemplares">Ejemplares</div>
-        <div class="count">50</div>
+        <div class="count"><app-count-animals></app-count-animals></div>
     </div>
 
 
-<div class="row">
-    <div class="col-sm-12 col-md-4 families"><img class="img_families" src="../assets/families1.png"></div>
-    <div class="col-sm-12 col-md-4 families"><img class="img_families" src="../assets/families2.png"></div>
-    <div class="col-sm-12 col-md-4 families"><img class="img_families" src="../assets/families3.png"></div>
-    <div class="col-sm-12 col-md-6 families-abajo"><img class="img_families" src="../assets/families4.png"></div>
-    <div class="col-sm-12 col-md-6 families-abajo"><img class="img_families" src="../assets/families5.png"></div>
+<div class="row" >
+    <div *ngFor="let row of tableData" [ngClass]="'col-sm-12 col-md-4 families'"><img [ngClass]="'img_families'" src="../assets{{row.imgUrl}}"></div>
 </div>

@@ -25,7 +25,7 @@ INSERT INTO continents (id, name, imgurl) VALUES
 (5, 'Europa', '/img/countries/europe.png'),
 (6, 'Australia', '/img/countries/australia.png');
 
-INSERT INTO animals (id, name, type, gender, country_id, date, imgurl, families_id) VALUES
+INSERT INTO animals (id, name, type, gender, continents_id, date, img_url, families_id) VALUES
 (1, 'Simba', 'León', 'Macho', 1, '2019-03-17', '/img/id1.png', 1),
 (2, 'Nala', 'León', 'Hembra', 1, '2022-11-02', '/img/id2.png', 1),
 (3, 'Maria', 'Tigre', 'Hembra', 2, '1988-05-02', '/img/id3.png', 1),

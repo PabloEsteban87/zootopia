@@ -58,7 +58,18 @@ public class AnimalsController {
             return ResponseEntity.notFound().build();
         }
     }
+
+    @GetMapping("/{count}")
+    public ResponseEntity<Long> getcount(@PathVariable Long count){
+         long animalscount = animalsService.countAnimals();
+        return ResponseEntity.ok(animalscount);
+    }
+
 }
+
+
+
+
 
 
 

@@ -3,6 +3,7 @@ package org.factoriaf5.zootopia.services;
 import org.factoriaf5.zootopia.models.animals.Animals;
 import org.factoriaf5.zootopia.repositories.AnimalsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -54,6 +55,15 @@ public class AnimalsService {
             return false;
         }
     }
+
+    
+    public long countAnimals(){
+        return animalsRepository.count();
+    }
+       
+        
+    
+    
 }
 
 
